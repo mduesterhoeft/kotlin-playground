@@ -16,7 +16,7 @@ class OrderTest {
                         ProductLineItem(2, Product(1, "shirt", Price(BigDecimal.TEN, Currency.getInstance("EUR")))),
                         ProductLineItem(1, Product(2, "jeans", Price(BigDecimal.ONE, Currency.getInstance("EUR"))))
                 )
-        ).getGrandTotal()
+        ).grandTotal
 
         then(grandTotal).isEqualTo(BigDecimal.valueOf(21))
     }
